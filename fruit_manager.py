@@ -26,6 +26,7 @@ def vendre(inventaire,fruit,quantite):
         print(f"\n❌ Pas assez de {fruit} pour vendre {quantite} unités")
 
 if __name__ == "__main__":
+    inventaire = ouvrir_inventaire()
     afficher_inventaire(inventaire)
     recolter(inventaire,"bananes",10)
     vendre(inventaire,"bananes",5)
